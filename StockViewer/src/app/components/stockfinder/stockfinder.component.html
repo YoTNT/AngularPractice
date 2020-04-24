@@ -1,0 +1,10 @@
+<h2>Enter the stock symbol to search your stock.</h2>
+<input type="text" placeholder="Enter the stock symbol" [(ngModel)]="stocksymbol">
+<button (click)="findPrice()">Search</button>
+
+<h2>Stock Price History</h2>
+<ul>
+
+    <li *ngFor = "let record of records">{{record}}</li>
+
+</ul>
